@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script type="text/javascript" src="brython/brython.js"></script>
+    <script type="text/javascript" src="brython/brython_stdlib.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="brython(1)">
+    <header class="header__containe">
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="list__item"><a href="#katalogActions">Эко Акции</a></li>
+                <li class="list__item"><a href="#Sorting-trash">Категории сортировки мусора</a></li>
+                <li class="list__item"><a href="html/download.html">Скачать</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="coffee">
+            <img class="coffee__img" src="/img/coffee2.png" alt="">
+            <div class="coffee__content">
+                <h1 class="coffee__title">Eco Friends</h1>
+                <p class="coffee__text">Экологические акции, правила сортироки мусора, чтобы защитить нашу
+                    планету.<span>Это и много другое есть у нас</span></p>
+            </div>
+        </section>
+
+
+
+        <!-- katalogActions -->
+
+
+        <section class="katalogActions" id="katalogActions">
+            <div class="katalog">
+                <div class="sidebar">
+                    <ul class="sidebar__content">
+                        <h2 class="sidebar__title">Категории</h2>
+                        <li class="sidebar__text">
+                            <div>
+                                <button class="sidebar-trash__btn-category sidebar-trash__btn" value="papper">Макулатура</button>
+                            </div>
+                        </li>
+                        <li class="sidebar__text">
+                            <div>
+                                <button class="sidebar-trash__btn-category sidebar-trash__btn" value="glass">Стекло</button>
+                            </div>
+                        </li>
+                        <li class="sidebar__text">
+                            <div>
+                                <button class="sidebar-trash__btn-category sidebar-trash__btn" value="metal">Металл</button>
+                            </div>
+                        </li>
+                        <li class="sidebar__text">
+                            <div>
+                                <button class="sidebar-trash__btn-category sidebar-trash__btn" value="plastic">Пластик</button>
+                            </div>
+                        </li>
+                        <li class="sidebar__text">
+                            <div>
+                                <button class="sidebar-trash__btn-category sidebar-trash__btn" value="food">Пищевые отходы</button>
+                            </div>
+                        </li>
+                        <li class="sidebar__text">
+                            <div>
+                                <button class="sidebar-trash__btn-category sidebar-trash__btn" value="hygienic">Средства личной
+                                    гигиены</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="action">
+                <h2 class="action__title-category action__title" id="action__title-category"></h2>
+                <p class="action__text-category1 action__text" id="action__text-category1"></p>
+                <p class="action__text-category2 action__text" id="action__text-category2"></p>
+
+                <img class="action__photo-lynx" src="img/lynx.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- Sorting-trash -->
+
+
+        <section class="sorting-trash" id="Sorting-trash">
+            <div class="katalog-trash">
+                <div class="sidebar-trash">
+                    <ul class="sidebar-trash__content">
+                        <h2 class="sidebar-trash__title">Эко Акции</h2>
+                        <li class="sidebar-trash__text">
+                            <div class="title-date">
+                                <button class="sidebar-trash__btn-eco sidebar-trash__btn" value="bum">Бумажный БУМ</button>
+                                <time>26.10.2022-30.06.2023</time>
+                            </div>
+                        </li>
+                        <li class="sidebar-trash__text">
+                            <div class="title-date">
+                                <button class="sidebar-trash__btn-eco sidebar-trash__btn" value="electro">ЭлектроСбор</button>
+                                <time>16.06.2022</time>
+                            </div>
+                        </li>
+                        <li class="sidebar-trash__text">
+                            <div class="title-date">
+                                <button class="sidebar-trash__btn-eco sidebar-trash__btn" value="wood">Елочный круговорот</button>
+                                <time>02.01.2023-26.02.2023</time>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <img class="katalog-trash__img" src="img/37563.svg" alt="">
+
+
+            </div>
+            <div class="action">
+                <div class="title-date-container"><h2 class="action__title" id="action__title"></h2><span id="date"></span></div>
+                <div class="zone" id="zone"></div>
+
+
+            </div>
+            <!-- <img class="sorting-trash__img" src="/img/303233.svg" alt=""> -->
+        </section>
+    </main>
+    <script type="text/python" src="script.py"></script>
+</body>
+
+</html>
