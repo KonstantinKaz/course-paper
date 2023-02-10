@@ -48,7 +48,7 @@ button{
 
 .header__containe{
     background-color: var(--bg);
-    padding: 3%;
+    padding: 3%; 
 }
 .img {
     width: 100%;
@@ -82,19 +82,39 @@ button{
 
 .main{
     background-color: var(--bg);
-    padding: 3%;
+    padding: 0 3% 3% 3%;
 }
 
 .main__title{
+    color: #f0f0f0;
     font-size: 60px;
     margin-bottom: 60px;
     text-align: center;
 }
 
+.main__globalText{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    line-height: 1.6;
+
+}
+
+.right {
+    width: 100%;
+    text-align: left;
+}
+
+.left {
+    text-align: right;
+}
+
 .main__text{
-    font-size: 24px;
+    color: #A5A5A5;
+    font-size: 16px;
     margin-bottom: 70px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .main__images{
@@ -120,7 +140,7 @@ button{
     text-align: center;
     width: 246px;
     height: 20px;
-    margin: 100px auto;
+    margin: 70px auto 50px auto;
     padding: 30px 40px;
     background-color: #E4717A;
     border-radius: 20px;
