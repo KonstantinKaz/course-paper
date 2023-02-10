@@ -56,7 +56,7 @@ button{
 .nav__list{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     margin-left: 30%;
     gap: 50px;
     padding: 30px;

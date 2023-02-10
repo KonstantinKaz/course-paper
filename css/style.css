@@ -56,8 +56,8 @@ button{
 .nav__list{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: 30%;
+    justify-content: end;
+    margin-right: 5%;
     gap: 50px;
     padding-top: 30px;
     
@@ -69,12 +69,6 @@ button{
     color: #E4717A;
     transition: .5s ease-in-out;
 }
-
-
-
-
-
-
 
 
 /* Main */
